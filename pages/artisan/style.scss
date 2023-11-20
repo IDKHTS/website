@@ -1,0 +1,131 @@
+@import '@@/resources/scss/theme/variables.scss';
+$bg-black-1: #000000;
+$font-white-1: #F5F5F7;
+$bg-black-2: #151516;
+$font-white-2: #A1A1A6;
+$bg-white-1: #FFFFFF;
+$font-black-1: #86868B;
+$bg-white-2: #F5F5F7;
+$font-black-2: #1D1D1F;
+
+
+.bg-black-1 {
+  background-color: $bg-black-1;
+  // color: $font-white-1;
+  color: white;
+}
+.bg-black-2 {
+  background-color: $bg-black-2;
+  // color: $font-white-2;
+  color: white;
+}
+.bg-white-1 {
+  background-color: $bg-white-1;
+  color: $font-black-1;
+}
+.bg-white-2 {
+  background-color: $bg-white-2;
+  color: $font-black-2;
+}
+
+
+.h-client {
+  height: 100%;
+  min-height: 100vh;
+}
+.z-10 {
+  z-index: 10;
+}
+.z-20 {
+  z-index: 20;
+}
+
+.opacity-gradient {
+  left: 0;
+  background: linear-gradient(90deg, #0B0B0B 0%, rgba(9, 9, 9, 0) 100%);
+}
+.opacity-gradient-to-left {
+  right: 0;
+  background: linear-gradient(-90deg, #0B0B0B 0%, rgba(9, 9, 9, 0) 100%);
+}
+.opacity-0 {
+  opacity: 0
+}
+.opacity {
+  opacity: 1 !important
+}
+.fade-in {
+  transform: translateX(0) !important
+}
+
+.checkout-nav-bar-wrapper {
+  width: 4px;
+  background: rgba(161, 161, 166, 0.4);
+  border-radius: 5px;
+  .checkout-nav-bar {
+    width: 4px;
+    height: 30px;
+    margin-top: 10px;
+    background-color: transparent;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+  .checkout-nav-active-bar {
+    background-color: white;
+    border-radius: 5px;
+  }
+}
+.checkout-nav {
+  cursor: pointer;
+  opacity: 0.3;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+.checkout-nav-active {
+  color: white;
+  cursor: pointer;
+  opacity: 1;
+}
+
+
+@include mobile{
+  .checkout-nav-wrapper {
+    position: absolute;
+    bottom: 0;
+    z-index: 12;
+
+    width: 100%;
+    padding: 0 16px;
+    display: flex;
+    justify-content: space-between;
+
+    .checkout-nav-text {
+      text-align: center;
+      width: 100%;
+      
+    }
+
+    .checkout-nav {
+      width: 50%;
+      max-width: 104px;
+      height: 4px;
+      border-radius: 5px;
+      flex: 1 1 auto;
+      background-color: white;
+      opacity: 0.4;
+    }
+    .checkout-nav-active {
+      opacity: 1;
+    }
+
+    .checkout-nav-item {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      padding: 0 16px;
+    }
+  }
+}

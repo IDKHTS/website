@@ -1,0 +1,170 @@
+.footnote {
+  font-size: 0.55vw;
+  vertical-align: text-top;
+  display: inline-block;
+  transform: scale(0.9);
+}
+
+.line-blue {
+  background: linear-gradient(
+      87deg,
+      #ffffff 0%,
+      #53beee 40.9423828125%,
+      #2374f9 89.0869140625%
+    );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.mobile_box {
+  display: none !important;
+}
+
+.margin_line {
+  margin-top: -2px;
+}
+
+
+.con_title_style {
+  font-size: 2.5vw;
+  text-align: left;
+  width: 100%;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  margin-bottom: 51.2px;
+}
+
+.camera_title {
+  width: 100%;
+  text-align: center;
+  background: linear-gradient(87deg, #53BEEE 0%, #2374F9 89.0869140625%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.white {
+  color: white;
+}
+
+.comon_title {
+  width: 80%;
+  text-align: left;
+  letter-spacing: 1px;
+}
+
+.comon_pro {
+  text-align: left;
+  font-size: 1.09375vw;
+  /* line-height: 1rem; */
+  letter-spacing: 1px;
+  margin-top: 40px;
+  width: 85%;
+  color: #c8c8c8;
+}
+
+.comon_pro_txt {
+  font-size: 1.09375vw;
+  width: 100%;
+  letter-spacing: 1px;
+  text-align: left;
+  margin-bottom: 32px;
+}
+.con_bg_gray {
+  color: #666666;
+}
+.new_title {
+  width: 51%;
+  margin: auto;
+}
+.new_title p {
+  display: inline-block;
+}
+.text_right {
+  padding-left: 10%;
+}
+.game_txt {
+  width: 90%;
+  padding-left: 10%;
+  color: #c8c8c8;
+  margin-top: 64px;
+  line-height: 1.4;
+}
+.new_con_con {
+  box-sizing: border-box;
+  background-color: #fff;
+  padding: 8% 5%;
+  margin: auto;
+  text-align: left;
+  box-sizing: border-box;
+}
+.new_black {
+  background-color: #000;
+  margin-top: -6.4px;
+}
+
+.channel_pro {
+  font-size: 1.09375vw;
+  width: 50%;
+  /* line-height: 1rem; */
+  margin-top: 40px;
+  letter-spacing: 1px;
+  text-align: left;
+}
+
+.container_b_box {
+  padding: 6.6% 10%;
+  box-sizing: border-box;
+  background-color: #000000;
+  position: relative;
+}
+.con_img_box {
+  width: 100%;
+}
+
+.con_img_box img {
+  width: 80%;
+  float: left;
+}
+.container_b {
+  background-color: #000000;
+}
+
+.text_right_box {
+  width: 100%;
+  margin: auto;
+}
+
+.conten8_pro {
+  width: 90%;
+}
+
+
+
+
+
+@media screen and (max-width: 992px) {
+  .con_title_style {
+    font-size: 5.7555vw;
+  }
+  .new_title {
+    width: 100%;
+  }
+  .camera_title {
+    padding: 0 9%;
+    text-align: left;
+  }
+  .comon_pro_txt {
+    width: 83%;
+    font-size: 3vw;
+    text-align: left;
+  }
+  .channel_pro {
+    font-size: 3vw;
+  }
+  .conten8_pro {
+    width: 100%;
+    font-size: 3.74vw;
+    margin-bottom: 4vw;
+  }
+}

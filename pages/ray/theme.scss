@@ -1,0 +1,32 @@
+@import '../laser-modules/theme.scss';
+
+@include mobile {
+  .secondary-title {
+    color: var(--white, #FFF);
+    text-align: center;
+
+    /* Heading/375/Gilroy Bold-28 */
+    font-family: Roboto;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px; /* 128.571% */
+    letter-spacing: -0.24px;
+  }
+}
+
+.ray-desc {
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px; /* 140% */
+  letter-spacing: -0.24px;
+
+  @include mobile {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+  }
+}

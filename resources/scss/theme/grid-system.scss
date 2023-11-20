@@ -1,0 +1,336 @@
+@media (max-width : $breakPoint_s) {
+  $desingGutter: 16px;
+  $desingMargin: 16px;
+  $desingCols: 4;
+  $gutter: calc($desingGutter / 2);
+  $margin: $desingMargin - $gutter;
+  $colWidth: calc(100% / $desingCols);
+
+  .snmk-container{
+    display: flex;
+    margin-right: $margin;
+    margin-left: $margin;
+    flex-wrap: wrap;
+  }
+  .snmk-container-no-mr {
+    display: flex;
+    margin-left: $margin;
+    flex-wrap: wrap;
+  }
+  .snmk-container-no-ml {
+    display: flex;
+    margin-right: $margin;
+    flex-wrap: wrap;
+  }
+  .snmk-mx{
+    margin-right: $desingMargin;
+    margin-left: $desingMargin;
+  }
+  .snmk-ml {
+    margin-left: $desingMargin;
+  }
+  .snmk-mr {
+    margin-right: $desingMargin;
+  }
+  .snmk-px {
+    padding-right: $desingMargin;
+    padding-left: $desingMargin;
+  }
+  .snmk-pl {
+    padding-left: $desingMargin;
+  }
+  .snmk-pr {
+    padding-right: $desingMargin;
+  }
+
+  @for $i from 1 to 5 {
+    .snmk-col-xs-#{$i} {
+      width: calc(#{$i} * #{$colWidth} - #{$desingGutter});
+      margin-right: $gutter;
+      margin-left: $gutter;
+    }
+  }
+
+
+  @for $i from 1 to 5 {
+    .snmk-col-xs-offset-#{$i} {
+      margin-left: calc(#{$colWidth} * #{$i} + #{$gutter}) ;
+    }
+  }
+  .snmk-fullscreen-w {
+    width: 100vw;
+    position: relative;
+    left: -$desingMargin;
+  }
+}
+@media (min-width: $breakPoint_s) {
+  $desingGutter: 16px; // 设计稿 水槽大小
+  $desingMargin: 16px; // 设计稿 margin大小
+  $desingCols: 4;      //  列数
+  $gutter: calc($desingGutter / 2); 
+  $margin: $desingMargin - $gutter;
+  $colWidth: calc(100% / $desingCols);
+
+  .snmk-container{
+    display: flex;
+    margin-right: $margin;
+    margin-left: $margin;
+    flex-wrap: wrap;
+  }
+  .snmk-container-no-mr {
+    display: flex;
+    margin-left: $margin;
+    flex-wrap: wrap;
+  }
+  .snmk-container-no-ml {
+    display: flex;
+    margin-right: $margin;
+    flex-wrap: wrap;
+  }
+
+  @for $i from 1 to 5 {
+    .snmk-col-s-#{$i} {
+      width: calc(#{$i} * #{$colWidth} - #{$desingGutter});
+      margin-right: $gutter;
+      margin-left: $gutter;
+    }
+  }
+
+
+  @for $i from 1 to 5 {
+    .snmk-col-s-offset-#{$i} {
+      margin-left: calc(#{$colWidth} * #{$i} + #{$gutter}) ;
+    }
+  }
+
+  .snmk-fullscreen-w {
+    width: 100vw;
+    position: relative;
+    left: -$desingMargin;
+  }
+  .snmk-mx{
+    margin-right: $desingMargin;
+    margin-left: $desingMargin;
+  }
+  .snmk-ml {
+    margin-left: $desingMargin;
+  }
+  .snmk-mr {
+    margin-right: $desingMargin;
+  }
+  .snmk-px {
+    padding-right: $desingMargin;
+    padding-left: $desingMargin;
+  }
+  .snmk-pl {
+    padding-left: $desingMargin;
+  }
+  .snmk-pr {
+    padding-right: $desingMargin;
+  }
+}
+@media (min-width: $breakPoint_m) {
+  $desingGutter: 16px; // 设计稿 水槽大小
+  $desingMargin: 40px; // 设计稿 margin大小
+  $desingCols: 8;      //  列数
+  $gutter: calc($desingGutter / 2); 
+  $margin: $desingMargin - $gutter;
+  $colWidth: calc(100% / $desingCols);
+
+  .snmk-container{
+    display: flex;
+    margin-right: $margin;
+    margin-left: $margin;
+    flex-wrap: wrap;
+  }
+  .snmk-container-no-mr {
+    display: flex;
+    margin-left: $margin;
+    flex-wrap: wrap;
+  }
+  .snmk-container-no-ml {
+    display: flex;
+    margin-right: $margin;
+    flex-wrap: wrap;
+  }
+  .snmk-mx{
+    margin-right: $desingMargin;
+    margin-left: $desingMargin;
+  }
+  .snmk-ml {
+    margin-left: $desingMargin;
+  }
+  .snmk-mr {
+    margin-right: $desingMargin;
+  }
+  .snmk-px {
+    padding-right: $desingMargin;
+    padding-left: $desingMargin;
+  }
+  .snmk-pl {
+    padding-left: $desingMargin;
+  }
+  .snmk-pr {
+    padding-right: $desingMargin;
+  }
+
+  @for $i from 1 to 9 {
+    .snmk-col-m-#{$i} {
+      width: calc(#{$i} * #{$colWidth} - #{$desingGutter});
+      margin-right: $gutter;
+      margin-left: $gutter;
+    }
+  }
+
+
+  @for $i from 1 to 9 {
+    .snmk-col-m-offset-#{$i} {
+      margin-left: calc(#{$colWidth} * #{$i} + #{$gutter}) ;
+    }
+  }
+  .snmk-fullscreen-w {
+    width: 100vw;
+    position: relative;
+    left: -$desingMargin;
+  }
+}
+@media (min-width: $breakPoint_l){
+  $desingGutter: 16px; // 设计稿 水槽大小
+  $desingMargin: 60px; // 设计稿 margin大小
+  $desingCols: 12;     //  列数
+  $gutter: calc($desingGutter / 2); 
+  $margin: $desingMargin - $gutter;
+  $colWidth: calc(100% / $desingCols);
+
+  .snmk-container{
+    display: flex;
+    margin-right: $margin;
+    margin-left: $margin;
+    flex-wrap: wrap;
+  }
+  .snmk-container-no-mr {
+    display: flex;
+    margin-left: $margin;
+    flex-wrap: wrap;
+  }
+  .snmk-container-no-ml {
+    display: flex;
+    margin-right: $margin;
+    flex-wrap: wrap;
+  }
+  .snmk-mx{
+    margin-right: $desingMargin;
+    margin-left: $desingMargin;
+  }
+  .snmk-ml {
+    margin-left: $desingMargin;
+  }
+  .snmk-mr {
+    margin-right: $desingMargin;
+  }
+  .snmk-px {
+    padding-right: $desingMargin;
+    padding-left: $desingMargin;
+  }
+  .snmk-pl {
+    padding-left: $desingMargin;
+  }
+  .snmk-pr {
+    padding-right: $desingMargin;
+  }
+  @for $i from 1 to 13 {
+    .snmk-col-l-#{$i} {
+      width: calc(#{$i} * #{$colWidth} - #{$desingGutter});
+      margin-right: $gutter;
+      margin-left: $gutter;
+    }
+  }
+
+
+  @for $i from 1 to 13 {
+    .snmk-col-l-offset-#{$i} {
+      margin-left: calc(#{$colWidth} * #{$i} + #{$gutter}) ;
+    }
+  }
+  .snmk-fullscreen-w {
+    width: 100vw;
+    position: relative;
+    left: -$desingMargin;
+  }
+}
+@media (min-width: $breakPoint_xl ) {
+  $desingGutter: 24px; // 设计稿 水槽大小
+  $desingMargin: 96px; // 设计稿 margin大小
+  $desingCols: 12;     //  列数
+  $gutter: calc($desingGutter / 2); 
+  $margin: $desingMargin - $gutter;
+  $colWidth: calc(100% / $desingCols);
+
+  .snmk-container{
+    display: flex;
+    justify-content: flex-start;
+    margin-right: $margin;
+    margin-left: $margin;
+    flex-wrap: wrap;
+  }
+  .snmk-container-no-mr {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: $margin;
+    flex-wrap: wrap;
+  }
+  .snmk-container-no-ml {
+    display: flex;
+    margin-right: $margin;
+    flex-wrap: wrap;
+  }
+  .snmk-mx{
+    margin-right: $desingMargin;
+    margin-left: $desingMargin;
+  }
+  .snmk-ml {
+    margin-left: $desingMargin;
+  }
+  .snmk-mr {
+    margin-right: $desingMargin;
+  }
+  .snmk-px {
+    padding-right: $desingMargin;
+    padding-left: $desingMargin;
+  }
+  .snmk-pl {
+    padding-left: $desingMargin;
+  }
+  .snmk-pr {
+    padding-right: $desingMargin;
+  }
+
+  @for $i from 1 to 13 {
+    .snmk-col-#{$i} {
+      width: calc(#{$i} * #{$colWidth} - #{$desingGutter});
+      // margin: 0 $gutter;
+      margin-right: $gutter;
+      margin-left: $gutter;
+    }
+  }
+
+
+  @for $i from 1 to 13 {
+    .snmk-col-offset-#{$i} {
+      margin-left: calc(#{$colWidth} * #{$i} + #{$gutter}) ;
+    }
+  }
+  .snmk-fullscreen-w {
+    width: 100vw;
+    position: relative;
+    left: -$desingMargin;
+  }
+}
+@media (min-width: $breakPoint_xxxl) {
+  .snmk-container{
+    max-width: calc(#{$breakPoint_xxxl} - 168px - 1px);
+    position: relative;
+    left: calc(50% - 84px);
+    transform: translateX(-50%);
+  }
+}

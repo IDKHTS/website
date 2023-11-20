@@ -1,0 +1,99 @@
+// @import "~bulma/sass/utilities/initial-variables";
+// @import "~bulma/sass/utilities/functions";
+
+$white: white;
+$white-ter: #fafafa;
+$red: #E12846;
+$light-grey: #c8c8c8;
+$dark-grey: #646464;
+$background-color: #fafafa;
+$light-white: #fafafa;
+$dark-background-color: #f0f0f0;
+$blue: #28A7E1;
+$dark-blue: #088fcd;
+$thema-blud: #0c63e2;
+$black: #282828;
+$dark-black: #131313;
+$grey: #808080;
+$dark-yellow: #ab910c;
+$blue-gray: #BACCD4;
+$light-black: #303030;
+$facebook-blue: #4367B2;
+$facebook-blue-hover: #355a9b;
+
+
+$primary: $blue;
+
+
+@mixin mymobile {
+  @media only screen and (max-width: 1024px) {
+      @content;
+  }
+}
+
+
+.container {
+  max-width: 1152px;
+}
+
+/* hero background-cover */
+.hero {
+
+  &.is-large {
+    @include mymobile {
+
+      padding-top: 12rem;
+      padding-bottom: 12rem;
+    }
+  }
+
+  &.is-medium {
+    @include mymobile {
+
+      padding-top: 9rem;
+      padding-bottom: 9rem;
+    }
+  }
+
+
+  background-size:     cover;
+  background-repeat:   no-repeat;
+  background-position: center center;
+
+}
+
+
+.fixed-navbar {
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%;
+  /*overflow: hidden;*/
+  z-index: 10;
+}
+.iconImg:hover{
+    opacity: 0.8;
+}
+
+// https://github.com/kenwheeler/slick/issues/179#issuecomment-204768021
+// .slick-track{
+//     display: flex;
+//
+//     .slick-slide{
+//         display: flex;
+//         height: auto;
+//         align-items: center; //optional
+//         justify-content: center; //optional
+//         &>div {
+//           display: flex;
+//           height: 100%;
+//         }
+//     }
+// }
+
+body:after {
+	content: url('https://ditfjx9w4x3vl.cloudfront.net/img/03-case-button-3d-hover.png')
+            url('https://ditfjx9w4x3vl.cloudfront.net/img/03-case-button-cnc-hover.png')
+            url('https://ditfjx9w4x3vl.cloudfront.net/img/03-case-button-laser-hover.png');
+	display: none;
+
+}

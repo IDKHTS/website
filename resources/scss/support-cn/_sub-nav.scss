@@ -1,0 +1,14 @@
+.sub-nav {
+  @include tablet {
+    align-items: baseline;
+    flex-direction: row;
+    margin-top: 28px;
+    margin-bottom: 40px;
+  }
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}

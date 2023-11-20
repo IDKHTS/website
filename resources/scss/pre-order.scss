@@ -1,0 +1,488 @@
+
+$mobile-max-width : 1029px;
+$pc-min-width : 1030px;
+
+$main-black: #282828;
+$main-blue: #28a7e1;
+$main-grey: #808080;
+
+
+body {
+  font-family: "Roboto","Droid Sans","Helvetica Neue","Helvetica","Arial","Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei","Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+	/* font-family:  sans-serif; */
+	color: $main-black;
+	font-weight: normal;
+}
+
+.crs-country {
+	max-width: 200px;
+}
+
+body:after {
+	content: url('https://ditfjx9w4x3vl.cloudfront.net/img/stripe-pc-hover.png');
+	display: none;
+}
+
+
+@media (min-width : $pc-min-width) {
+	.mobile {
+		display: none;
+	}
+}
+
+@media (max-width : $mobile-max-width) {
+	.pc {
+		display : none;
+	}
+}
+
+@media (max-width : 424px) {
+	.logo-bg {
+		display : none;
+	}
+}
+
+@media (min-width : 425px) {
+	.logo-sm {
+		display : none;
+	}
+}
+
+h1 {
+	color : #888;
+}
+
+hr {
+  margin: 0;
+}
+
+table {
+  border-collapse: separate;
+}
+
+.logo {
+	i {
+		margin : 25px auto;
+	}
+}
+
+.remind-info-container {
+	background-color : #f0f0f0;
+
+	padding-top : 10px;
+	padding-bottom : 20px;
+
+
+	.remind-info {
+
+		h2 {
+			margin-bottom : 0px;
+			font-style: normal;
+			font-size: 2rem;
+		}
+
+		h3 {
+			font-size: 1.5rem;
+			font-weight : normal;
+		}
+
+		width : 600px;
+		text-align : center;
+
+		@media(max-width: 439px) {
+			width : 80%;
+		}
+		margin : 0px auto;
+	}
+
+
+}
+
+.main {
+
+	input[type=submit].paypal {
+		font-size: 0px;
+
+		margin : 10px auto;
+		display : block;
+		width : 260px;
+		height : 78px;
+		background : url('https://ditfjx9w4x3vl.cloudfront.net/img/pay-pc2.png');
+		border : 0;
+
+
+		&:hover {
+			background : url('https://ditfjx9w4x3vl.cloudfront.net/img/pay-pc-hover2.png');
+		}
+	}
+
+  .stripeButton {
+    margin : -10px auto 10px;
+		display : block;
+		width : 260px;
+		height : 78px;
+    background : url('https://ditfjx9w4x3vl.cloudfront.net/img/stripe-pc.png');
+    border : 0;
+
+    &:hover {
+      background : url('https://ditfjx9w4x3vl.cloudfront.net/img/stripe-pc-hover.png');
+    }
+  }
+
+	background : url('https://ditfjx9w4x3vl.cloudfront.net/img/background-pixel.png');
+
+	@media (min-width : $pc-min-width) {
+		position: relative;
+
+		padding : 10px 0 30px;
+
+
+		.container {
+			width : 1030px;
+			margin : 0px auto 50px;
+		}
+
+		.sku {
+			position: absolute;
+			margin-left: -20px;
+      top: 75px;
+		}
+
+		.form {
+
+			padding-top: 20px;
+			padding-left: 640px;
+
+			.fill {
+				position: relative;
+				background-color : white;
+        min-height: 605px;
+				width : 350px;
+
+
+
+				margin : 10px auto;
+
+				-moz-box-shadow: 0px 0px 20px #999999;
+				-webkit-box-shadow: 0px 0px 20px #999999;
+				box-shadow: 0px 0px 20px #999999;
+				border-radius: 10px;
+
+				hr {
+					width: 95%;
+				}
+
+				.description {
+					.thumb {
+						position: absolute;
+						margin : 10px;
+					}
+					.text {
+
+						padding: 20px  20px 30px 110px;
+
+						span:first-child {
+							font-size : 14px;
+							margin-bottom : 0px;
+							color : $main-black;
+              font-weight: bold;
+						}
+
+						span {
+							font-size : 12px;
+							color : $main-grey;
+						}
+					}
+
+				}
+
+				.location {
+					font-size : 16px;
+          margin-top: 10px;
+					table {
+
+						width: 100%;
+						padding-left : 10px;
+						padding-right : 10px;
+					}
+
+					.info {
+						margin : 10px 10px 20px;
+						font-size : 14px;
+						color : $main-grey;
+
+						span {
+							color : black;
+							font-weight : bold;
+						}
+					}
+				}
+
+				.fee {
+          padding-top: 10px;
+          padding-bottom: 10px;
+					table {
+						width : 96%;
+						margin : 0 auto;
+						font-size : 16px;
+						tr td {
+
+							&:first-child {
+								width : 85%;
+								text-align : right;
+								color : $main-grey;
+
+							}
+							&:nth-child(2) {
+								width : 15%;
+								font-weight : bold;
+								text-align : right;
+							}
+						}
+					}
+				}
+
+				.ammount {
+					text-align : right;
+					padding-right:  10px;
+					padding-bottom: 10px;
+					font-size : 24px;
+					font-weight : bold;
+					span {
+						color : $main-blue;
+					}
+
+				}
+
+				.footer-note {
+					padding-left : 10px;
+					padding-right : 10px;
+					padding-bottom: 20px;
+
+					font-size : 14px;
+					color : $main-grey;
+					span.emphasis {
+						font-weight: bold;
+						color : $main-black;
+					}
+				}
+
+			}
+
+			.checkout-btn {
+				margin-top : -20px;
+        padding-bottom: 5px;
+				a {
+					margin : 10px auto;
+					display : block;
+					width : 260px;
+					height : 90px;
+					background : url('https://ditfjx9w4x3vl.cloudfront.net/img/pay-pc2.png') ;
+
+
+					&:hover {
+						background : url('https://ditfjx9w4x3vl.cloudfront.net/img/pay-pc-hover2.png');
+					}
+				}
+			}
+		}
+
+		.footer {
+			width : 680px;
+			margin : 60px auto 0px;
+			text-align: center;
+			font-size : 14px;
+			line-height : 1.5;
+			color : $main-grey;
+		}
+	}
+
+
+
+
+	@media (max-width : $mobile-max-width) {
+
+		.dropdown {
+			float: right;
+			margin-right: 10%;
+		}
+
+		position: relative;
+
+		padding : 20px 0 40px;
+
+
+		.container {
+
+			margin : 0px auto;
+
+			.sku {
+				padding-bottom : 40px;
+			}
+		}
+
+
+
+		.form {
+
+
+
+			.fill {
+				position: relative;
+				background-color : white;
+
+				width : 90%;
+				max-width: 640px;
+
+
+
+				margin : 10px auto;
+
+				-moz-box-shadow: 0px 0px 20px #999999;
+				-webkit-box-shadow: 0px 0px 20px #999999;
+				box-shadow: 0px 0px 20px #999999;
+				border-radius: 10px;
+
+				hr {
+					width: 95%;
+				}
+
+				.description {
+					.thumb {
+						position: absolute;
+						margin : 10px;
+					}
+					.text {
+
+						padding: 20px  20px 30px 110px;
+
+						font-weight : bold;
+
+						span:first-child {
+							font-size : 14px;
+							margin-bottom : 0px;
+							color : $main-black;
+
+						}
+
+						span {
+							font-size : 14px;
+							color : $main-grey;
+						}
+					}
+
+				}
+
+				.location {
+
+					font-size : 14px;
+					color : $main-black;
+
+
+					table {
+						width: 100%;
+						padding: 10px;
+
+						font-size : 16px;
+
+
+
+					}
+
+					.info {
+						margin : 10px 10px 20px;
+
+						font-size : 14px;
+						color : $main-grey;
+
+						span {
+							color : black;
+							font-weight : bold;
+						}
+					}
+				}
+
+				.fee {
+          padding-top: 10px;
+          padding-bottom: 10px;
+					table {
+						width : 100%;
+						padding-right : 10px;
+						tr td {
+							&:first-child {
+								width : 85%;
+								text-align : right;
+								font-size : 16px;
+								color : $main-grey;
+
+							}
+							&:nth-child(2) {
+								width : 15%;
+								text-align : right;
+								font-size : 16px;
+								color : $main-black;
+								font-weight : bold;
+							}
+						}
+					}
+				}
+
+				.ammount {
+					text-align : right;
+					padding-right:  10px;
+					padding-bottom: 15px;
+
+					font-size : 26px;
+					font-weight : bold;
+
+					span {
+						color : $main-blue;
+					}
+
+				}
+
+				.footer-note {
+					padding-left : 10px;
+					padding-right : 10px;
+					padding-bottom: 20px;
+
+					font-size : 14px;
+					color : $main-grey;
+					span.emphasis {
+						font-weight: bold;
+						color : $main-black;
+					}
+				}
+
+			}
+
+			.checkout-btn {
+				margin-top : 0px;
+				a {
+					margin : 10px auto;
+					display : block;
+					width : 260px;
+					height : 90px;
+					background : url('https://ditfjx9w4x3vl.cloudfront.net/img/pay-pc2.png');
+
+
+					&:hover {
+						background : url('https://ditfjx9w4x3vl.cloudfront.net/img/pay-pc-hover2.png');
+					}
+				}
+			}
+
+
+		}
+
+		.footer {
+			width : 90%;
+			margin : 30px auto 0px;
+			text-align: center;
+			font-size : 14px;
+			line-height : 1.5;
+			color : $main-grey;
+
+		}
+	}
+}

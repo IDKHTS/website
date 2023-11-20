@@ -1,0 +1,34 @@
+/***** Breadcrumbs *****/
+.breadcrumbs {
+  @include tablet {
+    margin: 0;
+  }
+
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  li {
+    display: inline;
+    font-size: $font-size-base;
+    max-width: 450px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: $black_white_1;
+
+    + li::before {
+      color: $black_white_1;
+      content: "/";
+      margin: 0 4px;
+    }
+
+    a {
+      color: $black_white_1;
+    }
+
+
+    &:last-child, &:last-child a, &:last-child::before{
+      color: $black_white_3;
+    }
+  }
+}

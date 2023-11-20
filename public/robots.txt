@@ -1,0 +1,4 @@
+Sitemap: https://www.snapmaker.com/sitemap.xml
+
+# User-agent: Baiduspider
+# Disallow: /

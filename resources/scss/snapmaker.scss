@@ -1,0 +1,28 @@
+@import './variable.scss';
+
+// @import "~bulma/bulma";
+@import "./component/button.scss";
+
+
+
+body {
+    font-family: "Roboto","Droid Sans","Helvetica Neue","Helvetica","Arial","Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei","Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+}
+
+
+.padding-top {
+  margin-top: 53px;
+}
+
+
+@media (max-width : 639px) {
+  .pc {
+    display : none;
+  }
+}
+
+@media (min-width : 640px) {
+  .mobile {
+    display : none;
+  }
+}

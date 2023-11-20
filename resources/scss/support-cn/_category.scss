@@ -1,0 +1,187 @@
+/***** Category pages *****/
+.category-container {
+  @include tablet {
+    flex: 0 0 80%;
+    margin: 0;
+  }
+
+  flex: 1;
+  margin: 0 -20px; // cancel out padding of .container
+
+  .category-section {
+    width: 100%;
+  }
+}
+
+.snmk-container .category-sections .category-section {
+  margin-bottom: 2px;
+}
+.snmk-container .category-section-body {
+  padding: 0;
+}
+.snmk-container .category-section-title {
+  padding: 0 24px;
+}
+@media (max-width: $breakPoint_m) {
+  .snmk-container .category-section .category-section-article {
+    padding: 10px 24px;
+  }
+  .category-section-body .snmk-btn {
+    margin-left: 24px;
+  }
+}
+
+
+.category-section {
+  display: block;
+  margin-bottom: 20px;
+
+  &-header {
+    display: block;
+    position: relative;
+    height: 60px;
+    background-color: $grey_background_color;
+  }
+
+  &-toggle {
+    position: absolute;
+    top: calc(60px / 2);
+    right: 20px;
+    transform: translateY(-50%);
+    width: 25px;
+    height: 25px;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    background: none;
+
+    &-icon {
+      display: none;
+      width: 24px;
+      height: 24px;
+    }
+
+    .icon-up {
+      // background-image: url($assets-ic_up_24x24-svg);
+    }
+
+    .icon-down {
+      // background-image: url($assets-ic_down_24x24-svg);
+    }
+
+    &[aria-expanded="false"] {
+      .icon-down {
+        display: inline-block;
+      }
+    }
+
+    &[aria-expanded="true"] {
+      .icon-up {
+        display: inline-block;
+      }
+    }
+  }
+
+  &-body {
+    display: none;
+    padding: 10px 20px;
+  }
+
+  &[aria-expanded="true"] {
+    margin-bottom: 2px;
+    .category-section-body {
+      display: block;
+    }
+  }
+  &[aria-expanded="false"] {
+    margin-bottom: 2px;
+  }
+  &:last-child {
+    &[aria-expanded="false"] {
+      margin-bottom: 100px;
+    }
+  }
+
+  &-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: $text_color;
+    padding: 0 20px;
+    line-height: 60px;
+  }
+
+  // articles
+  .category-section-articles, .category-section-subsections {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 10px;
+  }
+
+  // TODO: Can be unified with article-list?
+  .category-section-article {
+    @include tablet {
+      flex: 1 0 40%;
+    }
+
+    flex: 1 0 100%;
+    padding: 10px 20px 10px 0;
+
+    &-link {
+      color: $text_color;
+      font-size: $font-size-base;
+      text-decoration: none;
+
+      &:hover,
+      &:focus {
+        color: $brand_color;
+      }
+    }
+
+    .article-body {
+      display: none;
+    }
+  }
+
+  // subsection
+  .category-section-subsection {
+    @include tablet {
+      flex: 1 0 40%;
+      margin-bottom: 50px;
+    }
+
+    flex: 0 0 100%;
+    padding: 10px 20px 10px 0;
+    margin-bottom: 20px;
+
+    &-title {
+      display: block;
+      font-size: 20px;
+      font-weight: bold;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    &-articles {
+      padding: 0;
+    }
+
+    &-article {
+      padding: 10px 0;
+    }
+  }
+
+  .video-list {
+    margin-top: 5px;
+  }
+
+  .see-more-article {
+    margin-top: 10px;
+    width: auto;
+  }
+}
+
+.icon-star {
+  color: $brand_color;
+  font-size: 18px;
+}

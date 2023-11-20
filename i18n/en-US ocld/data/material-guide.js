@@ -1,0 +1,253 @@
+export default {
+
+  imgSrc: `https://ditfjx9w4x3vl.cloudfront.net/assets/materials/material-guide/Guide BG.jpg`,
+  mainTitle: `3D Printing Filaments Guide`,
+  desc: `Choosing the right filament is halfway to success of 3D prints. And the rest counts on the settings. This table presents the properties of various filaments, the recommended print settings, and the ideal applications, for you to see the tradeoffs between filaments and what works best for your intended use. `,
+  materialGuideTiles: [
+    {text: `Materials`, key: `materials`},
+    {text: `Colors Available`, key: `colorAvaliabe`},
+    {text: `Weight`, key: `weight`},
+    {text: `Diameter`, key: `diameter`},
+    {text: `Printing Temperature`, key: `printingTemp`},
+    {text: `Heated Bed Temperature`, key: `heatBedTemp`},
+    {text: `Recommended Printing Speed`, key: `recommandPrintingSpeed`},
+    {text: `Young’s Modulus`, key: `youngModulars`},
+    {text: `100% Modulus`, key: `pureModular`},
+    {text: `Tensile Strength`, key: `tensileStrength`},
+    {text: `Bending Strength`, key: `bendingStrength`},
+    {text: `Charpy Impact Strength`, key: `charpyImpactStrength`},
+    {text: `Glass Transition Temperature`, key: `glassTransitionTemp`},
+    {text: `Vicat Softening Temperature`, key: `vicatSofteningTemp`},
+    {text: `Melting Temperature`, key: `meltingTemp`},
+    {text: `Elongation at Break`, key: `elongationAtBreak`},
+    {text: `Shore Hardness`, key: `shoreHardness`},
+    {text: `Applications`, key: `applications`}
+  ],
+  materialsParams: [
+    {
+      materials: {
+        name: `PLA`,
+        btn: {text: `Learn More`, route: `/materials/pla/normal`},
+        imgSrc: `https://ditfjx9w4x3vl.cloudfront.net/assets/materials/material-guide/top-pla.png`,
+        children: [
+          {
+            materials: {
+              name: `Wood PLA`,
+              btn: {text: `Learn More`, route: `/materials/pla/wood`},
+              imgSrc: `https://ditfjx9w4x3vl.cloudfront.net/assets/materials/material-guide/top-wood-pla.png`
+            },
+            colorAvaliabe: [`#E5A16F`],
+            weight: `750 g`,
+            diameter: `1.75 mm`,
+            printingTemp: `190˚C–210˚C`,
+            heatBedTemp: `25˚C–60˚C`,
+            recommandPrintingSpeed: `30 mm/s–50 mm/s`,
+            youngModulars: `2636 ± 330 Mpa`,
+            pureModular: ``,
+            tensileStrength: `23.2 ± 0.4 Mpa`,
+            bendingStrength: `52.9 ± 0.3 Mpa`,
+            charpyImpactStrength: `2.1 ± 0.2 kJ/㎡`,
+            glassTransitionTemp: `62˚C`,
+            vicatSofteningTemp: `60˚C`,
+            meltingTemp: `151˚C`,
+            elongationAtBreak: ``,
+            shoreHardness: ``,
+            applications: `For indoor use <br> Miniatures, frames, wood-like decorations`
+          },
+          {
+            materials: {
+              name: `Glow-in-the-dark Green PLA`,
+              btn: {text: `Learn More`, route: `/materials/pla/grow-in-the-dark`},
+              imgSrc: `https://ditfjx9w4x3vl.cloudfront.net/assets/materials/material-guide/top-graw-in-dart-pla.png`
+            },
+            colorAvaliabe: [`#06D761`],
+            weight: `1 kg`,
+            diameter: `1.75 mm`,
+            printingTemp: `190˚C–230˚C`,
+            heatBedTemp: `25˚C–60˚C`,
+            recommandPrintingSpeed: `40 mm/s–60 mm/s`,
+            youngModulars: `2636 ± 330 Mpa`,
+            pureModular: ``,
+            tensileStrength: `46.6 ± 0.9 Mpa`,
+            bendingStrength: `85.1 ± 2.9 Mpa`,
+            charpyImpactStrength: `2.7 ± 0.2 kJ/㎡`,
+            glassTransitionTemp: `61˚C`,
+            vicatSofteningTemp: `63˚C`,
+            meltingTemp: `150˚C`,
+            elongationAtBreak: ``,
+            shoreHardness: ``,
+            applications: `For indoor use <br> Fun gifts, party essentials, shop signs, advertising gadgets`
+          }
+        ]
+      },
+      colorAvaliabe: [`#0066FF`, `#E60000`, `#464646`, `#FFFFFF`, `#5E5C57`, `#F5CE00`],
+      weight: `500 g/1 kg`,
+      diameter: `1.75 mm`,
+      printingTemp: `190˚C–210˚C`,
+      heatBedTemp: `25˚C–60˚C`,
+      recommandPrintingSpeed: `40 mm/s–60 mm/s`,
+      youngModulars: `2636 ± 330 Mpa`,
+      pureModular: ``,
+      tensileStrength: `46.6 ± 0.9 Mpa`,
+      bendingStrength: `85.1 ± 2.9 Mpa`,
+      charpyImpactStrength: `2.7 ± 0.2 kJ/㎡`,
+      glassTransitionTemp: `61˚C`,
+      vicatSofteningTemp: `63˚C`,
+      meltingTemp: `150˚C`,
+      elongationAtBreak: ``,
+      shoreHardness: ``,
+      applications: `For indoor use <br> Prototypes, decorations, props, electronics gadgets`
+    },
+    {
+      materials: {
+        name: `TPU`,
+        btn: {text: `Learn More`, route: `/materials/tpu/normal`},
+        imgSrc: `https://ditfjx9w4x3vl.cloudfront.net/assets/materials/material-guide/top-tpu.png`,
+        children: [
+          {
+
+            materials: {
+              name: `High Flow TPU95`,
+              imgSrc: `https://ditfjx9w4x3vl.cloudfront.net/assets/materials/High Flow TPU95.png`,
+              btn: {text: `Learn More`, route: `/materials/tpu/high-flow-tpu95`}
+            },
+            colorAvaliabe: [`#464646`],
+            weight: `1 kg`,
+            diameter: `1.75 mm`,
+            printingTemp: `200˚C–220˚C`,
+            heatBedTemp: `25˚C–50˚C`,
+            recommandPrintingSpeed: `40 mm/s–100 mm/s`,
+            youngModulars: ``,
+            pureModular: `13.24 ± 0.29 MPa`,
+            tensileStrength: `23.11 ± 0.63 MPa`,
+            bendingStrength: ``,
+            charpyImpactStrength: ``,
+            glassTransitionTemp: ``,
+            vicatSofteningTemp: ``,
+            meltingTemp: ``,
+            elongationAtBreak: `462.3 ± 21.1 (%) `,
+            shoreHardness: `95A`,
+            applications: `For indoor and outdoor use <br> Footwear, protective cases, 3D printing gadgets`
+          }
+        ]
+      },
+      colorAvaliabe: [`#464646`, `#F5CE00`],
+      weight: `1 kg`,
+      diameter: `1.75 mm`,
+      printingTemp: `210˚C–230˚C`,
+      heatBedTemp: `25˚C–60˚C`,
+      recommandPrintingSpeed: `20 mm/s–40 mm/s`,
+      youngModulars: ``,
+      pureModular: `9.4 ± 0.3 Mpa`,
+      tensileStrength: `29 ± 2.8 Mpa`,
+      bendingStrength: ``,
+      charpyImpactStrength: ``,
+      glassTransitionTemp: ``,
+      vicatSofteningTemp: ``,
+      meltingTemp: ``,
+      elongationAtBreak: `330.1 ± 14.9 (%)`,
+      shoreHardness: `95A`,
+      applications: `For indoor and outdoor use <br> Footwear, protective cases, 3D printing gadgets`
+    },
+    {
+      materials: {
+        name: `ABS`,
+        btn: {text: `Learn More`, route: `/materials/abs/normal`},
+        imgSrc: `https://ditfjx9w4x3vl.cloudfront.net/assets/materials/ABS-1.png`,
+        children: [ ]
+      },
+      colorAvaliabe: [`#464646`, `#ffffff`],
+      weight: `1 kg`,
+      diameter: `1.75 mm`,
+      printingTemp: `240˚C–260˚C`,
+      heatBedTemp: `80˚C–100˚C`,
+      recommandPrintingSpeed: `30 mm/s–50 mm/s`,
+      youngModulars: `2174 ± 285 MPa`,
+      pureModular: ``,
+      tensileStrength: `33.3 ± 0.8 MPa`,
+      bendingStrength: `59.0 ± 1.3 MPa`,
+      charpyImpactStrength: `12.6 ± 1.1 kJ/㎡`,
+      glassTransitionTemp: `101˚C`,
+      vicatSofteningTemp: `104˚C`,
+      meltingTemp: ``,
+      elongationAtBreak: ``,
+      shoreHardness: ``,
+      applications: `For indoor and outdoor use <br> Prototypes, home appliances, cases`
+    },
+    {
+      materials: {
+        name: `PVA`,
+        btn: {text: `Learn More`, route: `/materials/pva/normal`},
+        imgSrc: `https://ditfjx9w4x3vl.cloudfront.net/assets/materials/PVA-1.png`,
+        children: [ ]
+      },
+      colorAvaliabe: [`#fcf0b2`],
+      weight: `500 g`,
+      diameter: `1.75 mm`,
+      printingTemp: `215˚C–225˚C`,
+      heatBedTemp: `25˚C–60˚C`,
+      recommandPrintingSpeed: `30 mm/s–40 mm/s`,
+      youngModulars: ``,
+      pureModular: ``,
+      tensileStrength: ``,
+      bendingStrength: ``,
+      charpyImpactStrength: ``,
+      glassTransitionTemp: ``,
+      vicatSofteningTemp: ``,
+      meltingTemp: ``,
+      elongationAtBreak: ``,
+      shoreHardness: ``,
+      applications: `For water-soluble support`
+    },
+    {
+      materials: {
+        name: `Nylon`,
+        btn: {text: `Learn More`, route: `/materials/nylon/normal`},
+        imgSrc: `https://ditfjx9w4x3vl.cloudfront.net/assets/materials/Nylon-1.png`,
+        children: [ ]
+      },
+      colorAvaliabe: [`#464646`],
+      weight: `1 kg`,
+      diameter: `1.75 mm`,
+      printingTemp: `250˚C–270˚C`,
+      heatBedTemp: `25˚C–50˚C`,
+      recommandPrintingSpeed: `30 mm/s–60 mm/s`,
+      youngModulars: `2223 ± 199 MPa `,
+      pureModular: ``,
+      tensileStrength: `66.2 ± 0.9 MPa`,
+      bendingStrength: `97.0 ± 1.1 MPa`,
+      charpyImpactStrength: `9.6 ± 1.4 kJ/㎡`,
+      glassTransitionTemp: `67˚C`,
+      vicatSofteningTemp: `180˚C`,
+      meltingTemp: `190˚C`,
+      elongationAtBreak: ``,
+      shoreHardness: ``,
+      applications: `For indoor and outdoor use <br> Mechanical parts, nuts and bolts, home appliances`
+    },
+    {
+      materials: {
+        name: `Breakaway Support for PLA`,
+        btn: {text: `Learn More`, route: `/materials/breakaway-pla/normal`},
+        imgSrc: `https://ditfjx9w4x3vl.cloudfront.net/assets/materials/Breakaway PLA-1.png`,
+        children: []
+      },
+      colorAvaliabe: [`#ffffff`],
+      weight: `1 kg`,
+      diameter: `1.75 mm`,
+      printingTemp: `220˚C–230˚C`,
+      heatBedTemp: `25˚C–60˚C`,
+      recommandPrintingSpeed: `20 mm/s–40 mm/s`,
+      youngModulars: ``,
+      pureModular: ``,
+      tensileStrength: ``,
+      bendingStrength: ``,
+      charpyImpactStrength: ``,
+      glassTransitionTemp: ``,
+      vicatSofteningTemp: ``,
+      meltingTemp: ``,
+      elongationAtBreak: ``,
+      shoreHardness: ``,
+      applications: `For easy-to-remove support`
+    }
+  ]
+}

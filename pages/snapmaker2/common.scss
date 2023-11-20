@@ -1,0 +1,58 @@
+
+
+@function vw_m($value) {
+  @return vw($value, 750)
+};
+@function vw_p($value) {
+  @return vw($value, 1920)
+};
+
+.page-title {
+  text-align: center;
+  font-family: Roboto;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 68px; /* 113.333% */
+  letter-spacing: -0.24px;
+
+  background: linear-gradient(98deg, #0FA9FF 3.3%, #0F7DFF 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  @include mobile {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 44px;
+  }
+}
+.page-title-2 {
+  color: var(--White, #FFF);
+  font-family: Roboto;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 56px; /* 127.273% */
+  letter-spacing: -0.24px;
+
+  @include mobile {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 44px;
+  }
+}
+
+.page-desc {
+  color: var(--unnamed, #C2C2C2);
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 133.333% */
+
+  @include mobile { 
+    color: var(--White, #FFF);
+    font-weight: 500;
+  }
+}

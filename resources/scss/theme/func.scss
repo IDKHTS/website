@@ -1,0 +1,7 @@
+@function vw($value, $base) {
+  @return ($value/$base*100) + vw
+};
+
+@function vw_pc($value) {
+  @return vw($value, 1920)
+};

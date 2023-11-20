@@ -1,0 +1,103 @@
+@import '@@/resources/scss/theme/variables.scss';
+$black: #0B0B0B;
+.bg-black{
+  background-color: $black;
+}
+.first-title {
+  background: var(--unnamed, linear-gradient(90deg, #00FFD1 0%, #0704F1 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+
+  // text-align: center;
+  /* Display/1920/Gilroy Bold-60 */
+  font-family: Roboto;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 68px; /* 113.333% */
+  letter-spacing: -0.24px;
+
+  @media (max-width: 1568px) and (min-width: 768px) {
+    font-size: 44px;
+    line-height: 52px; /* 113.333% */
+  }
+
+  @include mobile {
+    // text-align: center;
+
+    /* Display/375/Gilroy Boid-36 */
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 44px; /* 122.222% */
+    letter-spacing: -0.24px;
+  }
+}
+.secondary-title {
+  color: #F3F3F3;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 48px; /* 120% */
+  letter-spacing: -0.24px;
+
+
+  @media (max-width: 1568px) and (min-width: 768px) {
+    font-size: 28px;
+    line-height: 44px; /* 113.333% */
+  }
+
+  @include mobile {
+    color: var(--white, #FFF);
+    /* Display/375/Gilroy Boid-36 */
+    font-size: 28px;
+    line-height: 44px; /* 113.333% */
+    letter-spacing: -0.24px;
+  }
+}
+.third-title {
+  color: var(--white, #FFF);
+  /* Heading/1920/Gilroy Bold-24 */
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px; /* 133.333% */
+  letter-spacing: -0.24px;
+
+  @include mobile {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 32px; /* 200% */
+  }
+}
+@include mobile {
+  .title-1 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 44px; /* 122.222% */
+  }
+}
+
+.right-icon {
+  transform: rotate(-180deg);
+}
+.left-icon, .right-icon {
+  margin-bottom: 16.7vh;
+  &[aria-disabled='true'] {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+}
+
+.mt-32 {
+  margin-top: 32px;
+}
+
+
+
